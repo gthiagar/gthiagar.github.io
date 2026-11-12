@@ -1,0 +1,276 @@
+.portfolio {
+  width: min(100% - 40px, 760px);
+  margin: 0 auto;
+}
+
+.site-header {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+  padding: 28px 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.wordmark {
+  display: grid;
+  width: 42px;
+  height: 42px;
+  place-items: center;
+  border: 1px solid var(--accent);
+  border-radius: 50%;
+  color: var(--accent);
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.site-nav {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.site-nav a,
+.site-footer a {
+  color: var(--text);
+  text-decoration: none;
+}
+
+.site-nav a:hover,
+.site-footer a:hover {
+  color: var(--accent);
+}
+
+.intro {
+  padding: 76px 0 92px;
+}
+
+.eyebrow,
+.project-number {
+  margin: 0;
+  color: var(--accent);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.intro h1 {
+  margin: 18px 0 22px;
+  color: var(--text-heading);
+  font-size: clamp(3rem, 12vw, 6.25rem);
+  font-weight: 700;
+  letter-spacing: -0.07em;
+  line-height: 0.98;
+}
+
+.intro-copy,
+.about-section > p:last-child,
+.contact-copy {
+  max-width: 560px;
+  color: var(--text);
+  font-size: 1.08rem;
+}
+
+.text-link {
+  display: inline-flex;
+  gap: 10px;
+  margin-top: 28px;
+  color: var(--accent);
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.content-section {
+  padding: 64px 0;
+  border-top: 1px solid var(--border);
+  scroll-margin-top: 24px;
+}
+
+.content-section h2 {
+  margin: 12px 0 32px;
+  color: var(--text-heading);
+  font-size: clamp(2rem, 8vw, 3.5rem);
+  letter-spacing: -0.05em;
+  line-height: 1.05;
+}
+
+.project-list {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.project-card {
+  overflow: hidden;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  background: var(--surface);
+}
+
+.project-image {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: contain;
+  background: #22231f;
+}
+
+.project-copy {
+  padding: 22px;
+}
+
+.project-copy h3 {
+  margin: 8px 0;
+  color: var(--text-heading);
+  font-size: 1.5rem;
+}
+
+.project-copy > p:last-child {
+  margin: 0;
+  color: var(--text);
+}
+
+.about-section > p:last-child {
+  margin: 0;
+}
+
+.education-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.education-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 18px;
+  padding: 22px;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  background: var(--surface);
+}
+
+.education-logo-wrap {
+  display: grid;
+  width: 96px;
+  height: 96px;
+  padding: 10px;
+  place-items: center;
+  border-radius: 8px;
+  background: #fff;
+}
+
+.education-logo {
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.education-card h3 {
+  margin: 0 0 8px;
+  color: var(--text-heading);
+  font-size: 1.25rem;
+}
+
+.education-card p {
+  margin: 0;
+  color: var(--text);
+}
+
+.skill-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.skill-item {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  min-height: 52px;
+  color: var(--text-heading);
+}
+
+.skill-item img {
+  width: 40px;
+  height: 40px;
+  padding: 5px;
+  border-radius: 6px;
+  background: #fff;
+  object-fit: contain;
+}
+
+.contact-section h2 {
+  margin-bottom: 16px;
+}
+
+.social-links {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+  margin-top: 24px;
+}
+
+.social-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  color: var(--text-heading);
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 160ms ease;
+}
+
+.social-link:hover {
+  color: var(--accent);
+}
+
+.social-link svg {
+  width: 24px;
+  height: 24px;
+}
+
+.site-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 24px 0 36px;
+  border-top: 1px solid var(--border);
+  color: var(--text);
+  font-size: 0.9rem;
+}
+
+@media (min-width: 640px) {
+  .portfolio {
+    width: min(100% - 64px, 760px);
+  }
+
+  .site-header,
+  .site-footer {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .site-nav {
+    flex-direction: row;
+    gap: 24px;
+  }
+
+  .intro {
+    padding: 112px 0 128px;
+  }
+
+  .project-copy {
+    padding: 28px;
+  }
+}
